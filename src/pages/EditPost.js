@@ -49,7 +49,7 @@ export const EditPost = () => {
         }
         const response = await fetch('https://blog3-1bfq.onrender.com/post', {
           method: 'PUT',
-          mode: 'cors',
+          mode: 'no-cors',
           body: data,
           credentials: 'include',
         })
