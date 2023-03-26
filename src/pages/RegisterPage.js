@@ -7,6 +7,7 @@ export const RegisterPage = () => {
         e.preventDefault()
         const response = await fetch('https://blog3-1bfq.onrender.com/register', {
             method: 'POST',
+            mode: 'cors',
             body: JSON.stringify({username: username, password: password}),
             headers: {'Content-Type':'application/json'}
         })
