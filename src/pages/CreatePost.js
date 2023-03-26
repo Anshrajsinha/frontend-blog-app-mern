@@ -38,7 +38,7 @@ export const CreatePost = () => {
             mode: 'cors',
             body: data,
             credentials: 'include',
-            headers: {'Content-Type':'application/json'}
+            headers: {'Content-Type':'multipart/form-data'}
         })
         //console.log(response)
         //console.log(await response.json())
