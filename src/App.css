@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  padding: 10px;
+  border: 2px solid red;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: inherit;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+.post {
+  display: flex;
+  margin-top: 5%;
+  font-size: smaller;
+}
+.post div.image {
+  width: 30%;
+}
+.post .image img {
+  width: 140px;
+}
+.info {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  gap: 4%;
+  color: cadetblue;
+  font-weight: bolder;
+}
+.info .author {
+  cursor: pointer;
+  color: crimson;
+}
+input {
+  display: block;
+  margin-bottom: 2%;
+  width: 100%;
+  padding: 5px;
+}
+.svg1 svg{
+  height: 4vh;
+}
+.svg1 {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
