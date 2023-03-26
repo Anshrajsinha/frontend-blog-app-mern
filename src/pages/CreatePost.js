@@ -35,7 +35,7 @@ export const CreatePost = () => {
         ev.preventDefault()
         const response = await fetch('https://blog3-1bfq.onrender.com/post', {
             method: 'POST',
-            mode: 'no-cors',
+            mode: 'cors',
             body: data,
             credentials: 'include',
         })
