@@ -31,14 +31,14 @@ export const CreatePost = () => {
         data.set('title', title)
         data.set('summary', summary)
         data.set('content', content)
-        data.set('file', files[0])
+        //data.set('file', files[0])
         ev.preventDefault()
         const response = await fetch('https://blog3-1bfq.onrender.com/post', {
             method: 'POST',
             mode: 'cors',
             body: data,
             credentials: 'include',
-            headers: {'Content-Type':'multipart/form-data'}
+            headers: {'Content-Type':'application/json'}
         })
         //console.log(response)
         //console.log(await response.json())
